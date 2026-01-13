@@ -1,4 +1,4 @@
-// Smooth scroll for navigation links
+
 const navLinks = document.querySelectorAll('nav a');
 
 navLinks.forEach(link => {
@@ -15,7 +15,7 @@ navLinks.forEach(link => {
     });
 });
 
-// Optional: Animate stats counting
+
 const stats = document.querySelectorAll('.stats div span');
 
 stats.forEach(stat => {

@@ -1,4 +1,4 @@
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -78,7 +78,7 @@ nav a.active {
     margin-bottom: 2rem;
 }
 
-/* Portfolio projects */
+
 .projects {
     display: flex;
     gap: 2rem;
@@ -94,7 +94,7 @@ nav a.active {
     text-align: center;
 }
 
-/* Contact buttons */
+
 .contact-buttons {
     display: flex;
     flex-direction: column;
@@ -118,7 +118,7 @@ nav a.active {
     background-color: #555;
 }
 
-/* Responsive */
+
 @media (max-width: 900px) {
     .hero {
         flex-direction: column-reverse;
