@@ -3,31 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Portfolio</title>
+    <title>Portfolio | Clint Harold Sumampong</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ======= CSS START ======= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #111;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            position: sticky;
+            top: 0;
+            background-color: #f9f9f9;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+        }
+
+        nav a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: #111;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #555;
+        }
+
+        section {
+            padding: 5% 5%;
+            min-height: 80vh;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image img {
+            max-width: 350px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .projects {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            flex: 1 1 30%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 400px;
+            margin-top: 2rem;
+        }
+
+        .contact-buttons a {
+            text-decoration: none;
+            padding: 1rem;
+            background-color: #111;
+            color: #fff;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .contact-buttons a:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .hero-image img {
+                margin-bottom: 2rem;
+            }
+
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-buttons {
+                width: 100%;
+                align-items: center;
+            }
+        }
+        /* ======= CSS END ======= */
+    </style>
 </head>
 <body>
 
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="logo">🜛</div>
         <nav>
-            <a href="about.html">About Me</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="hero">
+    <!-- ===== HERO / HOME SECTION ===== -->
+    <section id="home" class="hero">
         <div class="hero-text">
             <h1>Maayad ha luhas</h1>
             <p>— Welcome to my Portfolio</p>
         </div>
-
         <div class="hero-image">
             <img src="Picture Pidol.jpg" alt="Profile Image">
         </div>
     </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about">
+        <h1>About Me</h1>
+        <p>Hello! I am Clint Harold Sumampong. A dedicated and motivated Information Technology student at Northern Bukidnon State College with a strong interest in technology and digital creativity. Passionate about learning, personal growth, and building a better future through skills in design, content creation, and media.</p>
+        <h1>Skills</h1>
+        <p>- Mechanic - Video Editor - Poster Editor - Driving</p>
+        <h1>Goals</h1>
+        <p>"My primary goal in life is to finish my studies as a special gift to my parents for all their hard work. Looking ahead, I dream of becoming a police officer to serve my community. I am also driven by the desire to lift my family out of poverty and see my siblings succeed in their own lives. Eventually, I hope to establish stable businesses to ensure a secure and comfortable future for all of us."</p>
+    </section>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section id="portfolio" class="portfolio">
+        <h1>Projects</h1>
+        <p>Here are some of the projects I have worked on:</p>
+        <div class="projects">
+            <div class="project-card">Multimedia Artist</div>
+            <div class="project-card">Video Editing</div>
+            <div class="project-card">Digital Content Creator</div>
+            <div class="project-card">Poster Creator</div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <p>You can reach me via email, Facebook, or phone number. Just click the buttons below:</p>
+        <div class="contact-buttons">
+            <a href="mailto:20221248@nbsc.edu.ph">Email: 20221248@nbsc.edu.ph</a>
+            <a href="mailto:sumampongclintharold@gmail.com">Email: sumampongclintharold@gmail.com</a>
+            <a href="https://www.facebook.com/yourfbprofile" target="_blank">Facebook: Clint Harold Sumampong</a>
+            <a href="tel:+639750541409">Phone: +63 9750541409</a>
+        </div>
+    </section>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // Smooth scroll navigation
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                const targetId = link.getAttribute('href').slice(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
